@@ -1,0 +1,105 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    /*padding-top: 60px;*/
+    
+    -webkit-box-shadow: -7px 0px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -7px 0px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: -7px 0px 21px -9px rgba(0,0,0,0.75);
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    color: #444;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f0ad4e;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenavLeft {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+    -webkit-box-shadow: 7px 0px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 0px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: 7px 0px 21px -9px rgba(0,0,0,0.75);
+}
+
+.sidenavLeft a {
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    color: #444;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenavLeft a:hover, .offcanvas a:focus{
+    color: #fff;
+}
+
+.sidenavLeft .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menu-content {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-content li {
+    border-bottom: 1px solid #b8b8b8;
+    padding: 10px 0px 10px 20px;
+}
+
+sub-menu {
+    list-style: none;
+    background-color: #b5b5b5;
+}
+
+sub-menu li a {
+    color:#fff;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+    
+  .sidenavLeft {padding-top: 15px;}
+  .sidenavLeft a {font-size: 18px;}
+}
